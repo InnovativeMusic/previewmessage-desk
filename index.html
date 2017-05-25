@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>Textile Preview</title>
+  <title>Message Preview</title>
   <style>
      #link { 
            border-color: #009DDC;
@@ -60,9 +60,9 @@
 <body>
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p id="textile_preview"></p>
+    <p id="message_preview"></p>
   </div>
- <button id='link'>Preview Textile</button>
+ <button id='link'>Preview Message</button>
     <script src="https://ajax.deskapi.com/libs/desk/canvas/1.0.0/desk-canvas-all.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
    <script>
@@ -90,7 +90,7 @@
                   console.log(url2);
                   $.post(url2, body,
                     function(data) {
-                        $("#textile_preview").html(data);
+                        $("#message_preview").html(data);
                         $(".modal-content").show();
                         $("button").hide();
                       }
